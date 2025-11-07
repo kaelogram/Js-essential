@@ -9,21 +9,22 @@
 
 function calculator(num1, num2, operator) {
     if (operator === "+") {
-        console.log(num1 + num2)
+        return num1 + num2
     } else if (operator === "-") {
-        console.log(num1 - num2)
+        return num1 - num2
     } else if (operator === "/") {
         if (num1 === 0 || num2 === 0) {
-            console.log("Cannot be divided by zero")
-        } else console.log(num1 / num2)
+            return "Cannot be divided by zero"
+        } else {
+            return num1 / num2
+        }
     } else if (operator === "*") {
-        console.log(num1 * num2)
+        return num1 * num2
     } else {
-        console.log("Invalid Operators")
-    }
+        return "Invalid Operators"
+        }
 }
-
-
+calculator()
 
 
 // Test cases
